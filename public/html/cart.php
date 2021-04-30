@@ -49,10 +49,10 @@ if ($result->num_rows > 0) {
       <small class="card__tag">Technology</small>
       <h1 class="card__head"><?=$name?>
       </h1>
-      <span class="card__date font-weight-bold">Price: $<?=number_format($price)?></span>
+      <span class="card__date font-weight-bold">Price: $<?=$price?></span>
       <p class="card__text"><?=$desc?></p>
       <p class="font-weight-bold">Quantity: <?=$qty?></p>
-      <p class="font-weight-bold">Total: $<?=number_format($total)?></p>
+      <p class="font-weight-bold">Total: $<?=$total?></p>
    </main>
 </div>
 
@@ -88,7 +88,7 @@ $conn->close();
     </div>
     <div class="panel-header">
       Are you sure to placed your order?<br>
-      Your overall total is: $<?=number_format($totalAll)?>
+      Your overall total is: $<?=$totalAll?>
     </div>
     <div class="panel-body container">
       <form action="" method="post">
